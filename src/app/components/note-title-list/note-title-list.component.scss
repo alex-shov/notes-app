@@ -1,0 +1,32 @@
+@import "../../../variables.scss";
+
+aside {
+    width: 350px;
+    padding: 15px 10px;
+    border-right: $border;
+    min-height: calc(100vh - $header-height);
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin item {
+    background-color: #FFF;
+    padding: 20px 10px;
+    margin: 7px 10px;
+    font-weight: 700;
+}
+
+.note-name-item {
+    @include item;
+    transition: 0.3s;
+
+    &:hover {
+        cursor: pointer;
+        box-shadow: 5px 3px 10px 1px rgba(0, 0, 0, 0.3);
+    }
+}
+
+.bgc-blue {
+    background-color: $bg-blue;
+    color: #FFF;
+}

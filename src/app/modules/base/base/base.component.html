@@ -1,0 +1,7 @@
+<main>
+    <app-note-title-list></app-note-title-list>
+    <div *ngIf="!(notesService.selectedNoteId$ | async)" class="no-notes">
+        <p> Выберите заметку в списке слева</p>
+    </div>
+    <router-outlet></router-outlet>
+</main>

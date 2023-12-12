@@ -1,0 +1,13 @@
+@import "../../../../variables.scss";
+
+main {
+    display: flex;
+    width: 100%;
+}
+
+.no-notes {
+    text-align: center;
+    margin-top: 30px;
+    width: 100%;
+    font-weight: 700;
+}

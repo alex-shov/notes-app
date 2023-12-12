@@ -1,0 +1,24 @@
+<div class="wrapper">
+    <h3>Создание заметки</h3>
+    <form [formGroup]="createForm" (ngSubmit)="onSubmit()">
+        <label>
+            Название заметки
+            <input type="text" formControlName="name" placeholder="Введите название заметки">
+            <p class="text-danger" *ngIf="this.createForm.get('name')?.touched && this.createForm.get('name')?.invalid">
+                <small>Введите название заметки</small>
+            </p>
+        </label>
+        <label>
+            Содержание заметки
+            <textarea cols="30" rows="10" formControlName="content"></textarea>
+            <p class="text-danger"
+            *ngIf="this.createForm.get('content')?.touched && this.createForm.get('content')?.invalid">
+                <small>Введите содержание заметки</small>
+            </p>
+        </label>
+        <div class="btns">
+            <button (click)="onCancel()">Отмена</button>
+            <button type="submit"  class="create-btn">Создать</button>
+        </div>
+    </form>
+</div>

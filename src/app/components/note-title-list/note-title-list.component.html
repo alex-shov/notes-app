@@ -1,0 +1,3 @@
+<aside>
+    <div *ngFor="let note of notes" class="note-name-item" [ngClass]="{'bgc-blue': note.id == id}" (click)="selectNote(note.id)">{{note.name}}</div>
+</aside>

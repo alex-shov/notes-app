@@ -1,0 +1,14 @@
+@import "../../../variables.scss";
+
+.wrapper{
+    padding: 15px 10px;
+
+    h2{
+        color: $bg-blue;
+        margin: 20px;
+    }
+
+    p{
+        margin: 20px;
+    }
+}

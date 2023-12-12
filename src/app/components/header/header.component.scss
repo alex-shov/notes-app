@@ -1,0 +1,29 @@
+@import "../../../variables.scss";
+
+header {
+    display: flex;
+    padding: 0 50px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ccc;
+    height: $header-height;
+    border-top: $border;
+    border-bottom: $border;
+
+    .title {
+        font-size: 26px;
+        font-weight: 700;
+    }
+
+    .header-btn {
+        background-color: $bg-blue;
+        padding: 5px 10px;
+        border: 1px solid black;
+        border-radius: 5px;
+        color: #FFF;
+        transition: .3s;
+        &:hover{
+            background-color: #1c6eda;
+        }
+    }
+}
