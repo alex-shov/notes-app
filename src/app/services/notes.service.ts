@@ -10,17 +10,27 @@ export class NotesService {
   notes: INote[] = [{
     id: 1,
     name: 'Заметка 1',
-    content: 'Текст заметки 1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ipsa, vel saepe inventore perspiciatis temporibus non consequuntur, fugiat eaque at autem dicta. A commodi quibusdam sit voluptas saepe impedit possimus?'
+    content: 'Реализовать приложение для просмотра текстовых заметок. Интерфейс приложения должен состоять из 3 компонентов: верхняя шапка с названием, боковое меню со списком заметок, область для просмотра выбранной заметки.'
   },
   {
     id: 2,
     name: 'Заметка 2',
-    content: 'Текст заметки 2. Quas ex ad mollitia corporis aliquam dolorum aliquid deleniti minus accusamus doloremque magni maxime, commodi dolor unde id quibusdam quisquam, quos sint, quam dicta odio sequi libero voluptas nulla! Pariatur voluptates libero consectetur ad ipsam ut quibusdam harum quos eos ducimus. Similique repudiandae animi, dolor quidem facilis asperiores deleniti.'
+    content: 'Каждая заметка должна иметь заголовок и текст. В боковом меню выводятся заголовки, при выборе одного из них - справа выводится текст выбранной заметки.'
   },
   {
     id: 3,
     name: 'Заметка 3',
-    content: 'Текст заметки 3. Ut aliquid debitis iste placeat illo, error voluptatem dolore libero, repudiandae soluta porro! Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ipsa, vel saepe inventore perspiciatis temporibus non consequuntur, fugiat eaque at autem dicta. A commodi quibusdam sit voluptas saepe impedit possimus?'
+    content: 'Интерфейс должен растягиваться на всё окно браузера. При этом шапка имеет фиксированную высоту, а боковое меню - фиксированную ширину.'
+  },
+  {
+    id: 4,
+    name: 'Заметка 4',
+    content: 'Хранение предустановленных заметок реализовать в виде массива объектов, а не в структуре HTML.'
+  },
+  {
+    id: 5,
+    name: 'Заметка 5',
+    content: 'Реализовать возможность добавления заметок. Реализовать возможность доступа к каждой заметке по прямой ссылке.'
   }
   ]
 
